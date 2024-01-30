@@ -7,13 +7,18 @@ public class q10 {
     
     Scanner input = new Scanner(System.in);
 
-    int i, quantidadeNumeros = 10, numeros;
+    int i, j, quantidadeNumeros = 10, numeros;
     int somaPares = 0, somaPrimo = 0;
     int contadorPrimo = 0, contadorPar = 0;
 
     for (i = 1; i <= quantidadeNumeros; i++) {
       System.out.println("Digite um número :");
       numeros = input.nextInt(); 
+      for(j = 1; j <= quantidadeNumeros; j++) {
+        if(numeros % j == 0) {
+        contadorPrimo++; 
+        }
+      }
     }
 
     System.out.println("Total das somas dos números primos é de : " + somaPrimo);
