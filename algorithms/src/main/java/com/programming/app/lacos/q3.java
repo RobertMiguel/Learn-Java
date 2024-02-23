@@ -6,8 +6,6 @@ public class q3 {
   public static void main(String[] args) {
 
     Scanner input = new Scanner(System.in);
-
-    
     int i, quantidadePessoas = 8, idade;
     int contadorIdade15 = 0, contadorIdade16a30 = 0, contadorIdade31a45 = 0, contadorIdade46a60 = 0, contadorIdadeAcima60 = 0; 
     double porcentagemUltimaFaixaEtaria, porcentagemPrimeriaFaixaEtaria;
