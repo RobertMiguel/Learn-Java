@@ -29,7 +29,7 @@ public class q9 {
 
     }
 
-    double media = totalIdade / 10;
+    double media = totalIdade / 10.0;
     double porcentagemIdade10Altura90 = (contadorIdade10Altura190 * 100.0) / 10;
 
     System.out.println("Média das idades das dez pessoas : " + media);
