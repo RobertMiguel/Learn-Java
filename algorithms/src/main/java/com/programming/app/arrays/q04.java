@@ -1,4 +1,4 @@
-package com.programming.app.vetor;
+package com.programming.app.arrays;
 
 import java.util.Scanner;
 
