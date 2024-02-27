@@ -18,15 +18,10 @@ public class q03 {
       vetor01[i] = input.nextInt();
       intercalacao[j] = vetor01[i];
       j++;
-    }
-
-    j = 0;
-
-    for (i = 0; i < 10; i++) {
       System.out.println("Digite um número para o vetor 2 :");
       vetor02[i] = input.nextInt();
-      intercalacao[j + 1] = vetor02[i];
-      j += 2;
+      intercalacao[j] = vetor02[i];
+      j++;
     }
 
     for (int k = 0; k < intercalacao.length; k++) {
