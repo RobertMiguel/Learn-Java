@@ -1,6 +1,6 @@
-package com.programming.app.lacos;
+package com.programming.app.loop;
 
-public class q2 {
+public class q02 {
   public static void main(String[] args) {
 
     double despesas = 200.0;

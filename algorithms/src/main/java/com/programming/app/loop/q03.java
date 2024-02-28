@@ -1,8 +1,8 @@
-package com.programming.app.lacos;
+package com.programming.app.loop;
 
 import java.util.Scanner;
 
-public class q3 {
+public class q03 {
   public static void main(String[] args) {
 
     Scanner input = new Scanner(System.in);

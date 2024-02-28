@@ -1,6 +1,6 @@
-package com.programming.app.lacos;
+package com.programming.app.loop;
 
-public class q5 {
+public class q05 {
   public static void main(String[] args) {
     
     for (int i = 1; i <= 10; i++) {

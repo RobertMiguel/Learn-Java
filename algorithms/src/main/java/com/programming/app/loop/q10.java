@@ -1,4 +1,4 @@
-package com.programming.app.lacos;
+package com.programming.app.loop;
 
 import java.util.Scanner;
 
