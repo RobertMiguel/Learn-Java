@@ -6,24 +6,28 @@ import java.util.Scanner;
  * solution03
  */
 public class solution03 {
-  public static void main(String[] args) {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-    Scanner input = new Scanner(System.in);
+        int q = scanner.nextInt();
 
-    double q = 0;
+        for (int i = 0; i < q; i++) {
+            int a = scanner.nextInt();
+            int b = scanner.nextInt();
+            int n = scanner.nextInt();
 
-    int a = input.nextInt();
-    int b = input.nextInt();
-    int n = input.nextInt();
+            for (int j = 0; j < n; j++) {
+                int term = a;
+                for (int k = 0; k <= j; k++) {
+                    term += (int) (Math.pow(2, k) * b);
+                }
+                System.out.print(term + " ");
+            }
 
-    for (int i = 0; i < n; i++) {
-      q = a + Math.pow(2, i) * b;
-      System.out.println("Valor q : " + q);
+            System.out.println(); 
+        }
+
+        scanner.close();
     }
-
-    System.out.println(q);
-
-    input.close();
-
-  }
 }
+

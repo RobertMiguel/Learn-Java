@@ -14,7 +14,7 @@ public class q02 {
     double acrescimo = 0.05;
     double valorGeralVendas = 0, valorComissao, salarioFinal;
     int indiceMaisVendido = 0;
-    
+
     for (i = 0; i < 10; i++) {
       System.out.println("Digite o valor unitário do objeto :");
       valorUnitario[i] = input.nextDouble();
@@ -40,7 +40,7 @@ public class q02 {
     System.out.println("Valor geral das vendas : " + valorGeralVendas);
     System.out.println("Valor da comissão : " + valorComissao);
     System.out.println("Valor final do salário R$ : " + salarioFinal);
- 
+
     input.close();
 
   }
