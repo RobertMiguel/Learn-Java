@@ -14,27 +14,27 @@ public class RemoteControl implements Controller{
     this.tocando = false;
   }
 
-  public int getVolume() {
+  private int getVolume() {
     return volume;
   }
 
-  public void setVolume(int volume) {
+  private void setVolume(int volume) {
     this.volume = volume;
   }
   
-  public boolean getLigado() {
+  private boolean getLigado() {
     return ligado;
   }
 
-  public void setLigado(boolean ligado) {
+  private void setLigado(boolean ligado) {
     this.ligado = ligado;
   }
 
-  public boolean getTocando() {
+  private boolean getTocando() {
     return tocando;
   }
 
-  public void setTocando(boolean tocando) {
+  private void setTocando(boolean tocando) {
     this.tocando = tocando;
   }
 
@@ -67,25 +67,47 @@ public class RemoteControl implements Controller{
   
   @Override
   public void maisVolume() {
+    if (this.getLigado()) {
+      this.setVolume(this.getVolume() + 5);
+    } else {
+      System.out.println("Impossível aumentar o volume!");
+    }
   }
 
   @Override
   public void menosVolume() {
+    if (this.getLigado()) {
+      this.setVolume(getVolume() - 5);
+    } else {
+      System.out.println("Impossível diminuir o volume!");
+    }
   }
 
   @Override 
   public void ligarMudo() {
+    if (this.getLigado() && this.getVolume() > 0) {
+      this.setVolume(0);
+    }
   }
 
   @Override 
   public void desligarMudo() {
+    if (this.getLigado() && this.getVolume() == 0) {
+      this.setVolume(50);
+    }
   }
 
   @Override
   public void play() {
+    if (this.getLigado() && !(this.getTocando())) {
+      this.setLigado(true);
+    }
   }
 
   @Override 
   public void pause() {
+    if (this.getLigado() && this.getTocando()) {
+      this.setTocando(false);
+    }
   }
 }
